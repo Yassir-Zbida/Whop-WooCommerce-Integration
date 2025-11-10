@@ -1,0 +1,422 @@
+/* Whop WooCommerce Integration - Admin Styles */
+
+.whop-settings-wrap {
+    max-width: 99% !important;
+    margin: 20px 0;
+    --whop-primary-color: #ff6243;
+    --whop-primary-color-dark: #e25537;
+    --whop-primary-color-light: #ffe1d9;
+}
+
+.whop-settings-wrap h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--whop-primary-color);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.whop-settings-wrap h1 i {
+    color: var(--whop-primary-color);
+    font-size: 28px;
+}
+
+.whop-settings-wrap h1 .whop-heading-icon {
+    width: 28px;
+    max-width: 28px;
+    height: auto;
+    display: block;
+}
+
+.whop-version {
+    color: #50575e;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.whop-settings-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* Card Styles */
+.whop-card {
+    background: #ffffff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+.whop-card-header {
+    background: var(--whop-primary-color-light);
+    color: var(--whop-primary-color);
+    padding: 16px 20px;
+    border-bottom: 1px solid #f7c0b4;
+}
+
+.whop-card-header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.whop-card-header h2 i {
+    color: var(--whop-primary-color);
+}
+
+.whop-card-body {
+    padding: 20px;
+}
+
+/* Form Styles */
+.whop-form-group {
+    margin-bottom: 20px;
+}
+
+.whop-form-group:last-child {
+    margin-bottom: 0;
+}
+
+.whop-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1d2327;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.whop-form-group label .required {
+    color: #d63638;
+}
+
+.whop-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #ffffff;
+    color: #2c3338;
+}
+
+.whop-input:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.whop-input:disabled {
+    background: #f6f7f7;
+    color: #50575e;
+    cursor: not-allowed;
+}
+
+input.whop-input[type="password"]::-ms-reveal,
+input.whop-input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input.whop-input[type="password"]::-webkit-textfield-decoration-container,
+input.whop-input[type="password"]::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+}
+
+#whop-settings-form .wp-hide-pw {
+    display: none !important;
+}
+
+.whop-description {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #50575e;
+    line-height: 1.5;
+}
+
+.whop-description a {
+    color: var(--whop-primary-color);
+    text-decoration: none;
+}
+
+.whop-description a:hover,
+.whop-description a:focus {
+    color: var(--whop-primary-color-dark);
+    text-decoration: underline;
+}
+
+.whop-description strong {
+    color: #2c3338;
+}
+
+/* Input Group */
+.whop-input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.whop-input-group .whop-input {
+    flex: 1;
+}
+
+.whop-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whop-radio-option {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.whop-radio-option input[type="radio"] {
+    margin-top: 4px;
+}
+
+.whop-radio-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.whop-radio-label {
+    font-weight: 600;
+    color: #1d2327;
+    font-size: 13px;
+}
+
+.whop-radio-desc {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #50575e;
+}
+
+/* Button Styles */
+.whop-button {
+    padding: 8px 14px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.whop-button-primary {
+    background: var(--whop-primary-color);
+    border-color: var(--whop-primary-color);
+    color: #ffffff;
+}
+
+.whop-button-primary:hover,
+.whop-button-primary:focus {
+    background: var(--whop-primary-color-dark);
+    border-color: var(--whop-primary-color-dark);
+    color: #ffffff;
+}
+
+.whop-button-secondary {
+    background: #f6f7f7;
+    border-color: #dcdcde;
+    color: #2c3338;
+}
+
+.whop-button-secondary:hover,
+.whop-button-secondary:focus {
+    background: #e0e2e5;
+    border-color: #b4b9be;
+    color: #1d2327;
+}
+
+.whop-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.whop-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dcdcde;
+}
+
+/* Info Box */
+.whop-info-box {
+    background: #f6f7f7;
+    border: 1px solid #f7c0b4;
+    border-radius: 3px;
+    padding: 14px;
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.whop-info-box i {
+    font-size: 20px;
+    flex-shrink: 0;
+    color: var(--whop-primary-color);
+}
+
+.whop-info-box ul {
+    margin: 6px 0 0 0;
+    padding-left: 18px;
+}
+
+.whop-info-box ul li {
+    margin-bottom: 4px;
+    color: #2c3338;
+}
+
+.whop-info-box code {
+    background: #ffffff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #dcdcde;
+}
+
+/* Checklist */
+.whop-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.whop-checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.whop-checklist li:last-child {
+    border-bottom: none;
+}
+
+.whop-checklist li i {
+    font-size: 18px;
+    color: var(--whop-primary-color);
+    flex-shrink: 0;
+}
+
+.whop-checklist li strong {
+    display: block;
+    color: #1d2327;
+    margin-bottom: 2px;
+}
+
+.whop-checklist li p {
+    margin: 0;
+    color: #50575e;
+    font-size: 13px;
+}
+
+.whop-checklist li a {
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.whop-checklist li a:hover,
+.whop-checklist li a:focus {
+    text-decoration: underline;
+}
+
+/* Alert/Result Messages */
+#whop-test-result {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-radius: 3px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #2c3338;
+}
+
+#whop-test-result.success {
+    border-color: #00a32a;
+    background: #edfaef;
+    color: #0a4b1c;
+}
+
+#whop-test-result.error {
+    border-color: #d63638;
+    background: #fcf0f1;
+    color: #8a2424;
+}
+
+#whop-test-result.loading {
+    border-color: #b4b9be;
+    background: #fef8e6;
+    color: #6d6d70;
+}
+
+#whop-test-result i {
+    font-size: 18px;
+}
+
+/* Loading Spinner */
+.whop-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 98, 67, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--whop-primary-color);
+    animation: whop-spin 0.6s linear infinite;
+}
+
+@keyframes whop-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .whop-form-actions {
+        flex-direction: column;
+    }
+    
+    .whop-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .whop-input-group {
+        flex-direction: column;
+    }
+}
+
+/* WordPress Admin Notice Override */
+.notice.whop-admin-notice {
+    border-left: 4px solid var(--whop-primary-color);
+}
+
+.notice.whop-admin-notice h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
