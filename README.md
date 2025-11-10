@@ -1,6 +1,6 @@
 ## Whop WooCommerce Integration
 
-![Whop Logo](assets/whop-logo.svg)
+![Whop Woo](assets/readme-cover.png)
 
 Whop WooCommerce Integration is a WordPress plugin that adds a fully featured Whop payment gateway to WooCommerce. It streamlines order fulfillment through Whop, keeps customer access in sync, and provides a polished management experience for merchants.
 
